@@ -14,7 +14,7 @@ Esta aplicação permite a criação de pedais pelo usuário, vizualização de 
 
 ### Iniciado o projeto
 
-Clone este repositório, rode o comando `yarn add` para instalar as dependências. Acesse o arquivo `.env.example` renomeie para `.env` e configure as variáveis de ambiente necessárias.
+Clone este repositório, rode o comando `yarn install` para instalar as dependências. Acesse o arquivo `.env.example` renomeie para `.env` e configure as variáveis de ambiente necessárias. Rode um container docker com o `comando docker-compose up` e instale a migrations com o comando `yarn prisma migrate dev`
 
 ### Endoints da aplicação
 
