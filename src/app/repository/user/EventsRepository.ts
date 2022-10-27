@@ -9,6 +9,10 @@ export class EventsRepository implements IEvents {
     return await prismaClient.rides.findMany({ where: { user_id: id } });
   }
 
+  async listAllRides(): Promise<Ride[]> {
+    return await prismaClient.rides.findMany();
+  }
+
   async listParticipations(id: string): Promise<Ride[]> {
     const foo = await prismaClient.userEvents.findMany({
       where: {

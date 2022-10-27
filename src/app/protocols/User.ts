@@ -9,4 +9,5 @@ export interface IUser {
 export interface IEvents {
   listRides(id: string): Promise<Ride[]>;
   listParticipations(id: string): Promise<Ride[]>;
+  listAllRides(): Promise<Ride[]>;
 }
