@@ -7,7 +7,7 @@ type JwtType = {
 export class DecodeToken {
   constructor(private bearer_token: string) {}
 
-  getId() {
+  getId(): string {
     const [, token] = this.bearer_token.split(" "); //separa o token
 
     const { id } = jwt.decode(token) as JwtType;
