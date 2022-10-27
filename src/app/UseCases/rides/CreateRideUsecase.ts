@@ -1,6 +1,6 @@
 import { IRide } from "../../protocols/Ride";
 import { Ride } from "../../entities/Ride";
-import { DecodeToken } from "../../protocols/DecodeToken";
+import { DecodeToken } from "../../validators/DecodeToken";
 
 export class CreateRideUsecase {
   constructor(private rideRepository: IRide) {}

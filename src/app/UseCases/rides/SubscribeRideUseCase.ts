@@ -1,6 +1,6 @@
 import { IRide } from "../../protocols/Ride";
 import { Subscribe } from "../../entities/Subscribe";
-import { VerifyDate } from "../../protocols/VeriryDate";
+import { VerifyDate } from "../../validators/VeriryDate";
 
 const verifyDate = new VerifyDate();
 

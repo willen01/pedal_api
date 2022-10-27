@@ -1,6 +1,6 @@
 import { IEvents } from "../../protocols/User";
 import { Ride } from "../../entities/Ride";
-import { DecodeToken } from "../../protocols/DecodeToken";
+import { DecodeToken } from "../../validators/DecodeToken";
 
 export class ListRidesUseCase {
   constructor(private eventsRepository: IEvents) {}
