@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { EventsRepository } from "../../repository/user/EventsRepository";
+import { UserRepository } from "../../repository/user/UserRespository";
 import { ListAllRidesUseCase } from "../../UseCases/users/ListAllRidesUseCase";
 
-const listAllridesUseCase = new ListAllRidesUseCase(new EventsRepository());
+const listAllridesUseCase = new ListAllRidesUseCase(new UserRepository());
 
 class ListAllRidesController {
   async listAll(_: Request, res: Response): Promise<void> {

@@ -1,11 +1,10 @@
 import { Request, Response } from "express";
-// import { EventsRepository } from "src/app/repository/user/EventsRepository";
-import { EventsRepository } from "../../repository/user/EventsRepository";
-// import { ListParticipationsUseCase } from "src/app/UseCases/users/ListParticiparionsUseCase";
+// import { UserRepository } from "src/app/repository/user/UserRespository";
+import { UserRepository } from "../../repository/user/UserRespository";
 import { ListParticipationsUseCase } from "../../UseCases/users/ListParticiparionsUseCase";
 
 const listParticipationsUseCase = new ListParticipationsUseCase(
-  new EventsRepository()
+  new UserRepository()
 );
 
 type bearer_token = {

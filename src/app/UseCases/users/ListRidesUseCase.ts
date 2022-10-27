@@ -1,9 +1,9 @@
+import { IEvents } from "../../protocols/User";
 import { Ride } from "../../entities/Ride";
 import { DecodeToken } from "../../protocols/DecodeToken";
-import { EventsRepository } from "../../repository/user/EventsRepository";
 
 export class ListRidesUseCase {
-  constructor(private eventsRepository: EventsRepository) {}
+  constructor(private eventsRepository: IEvents) {}
 
   async list(bearer_token: string): Promise<Ride[]> {
     const token = new DecodeToken(bearer_token);

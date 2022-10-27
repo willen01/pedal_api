@@ -1,8 +1,8 @@
+import { IUser } from "../../protocols/User";
 import { User } from "../../entities/User";
-import { UserRepository } from "../../repository/user/UserRespository";
 
 export class CreateUserUseCase {
-  constructor(private userRepository: UserRepository) {}
+  constructor(private userRepository: IUser) {}
 
   async create(user: User): Promise<void> {
     const verifyUserExists = await this.userRepository.findOne(user.login);

@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { EventsRepository } from "../../repository/user/EventsRepository";
+import { UserRepository } from "../../repository/user/UserRespository";
 import { ListRidesUseCase } from "../../UseCases/users/ListRidesUseCase";
 
-const ridesUsecase = new ListRidesUseCase(new EventsRepository());
+const ridesUsecase = new ListRidesUseCase(new UserRepository());
 
 type bearer_token = {
   authorization: string;

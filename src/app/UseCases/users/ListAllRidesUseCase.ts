@@ -1,8 +1,8 @@
+import { IEvents } from "../../protocols/User";
 import { Ride } from "../../entities/Ride";
-import { EventsRepository } from "../../repository/user/EventsRepository";
 
 export class ListAllRidesUseCase {
-  constructor(private eventsRepository: EventsRepository) {}
+  constructor(private eventsRepository: IEvents) {}
 
   async listAll(): Promise<Ride[]> {
     return await this.eventsRepository.listAllRides();

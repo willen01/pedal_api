@@ -1,10 +1,9 @@
-import { User } from "../../entities/User";
-import { UserRepository } from "../../repository/user/UserRespository";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { IUser } from "../../protocols/User";
 
 export class LoginUserUseCase {
-  constructor(private userRepository: UserRepository) {}
+  constructor(private userRepository: IUser) {}
 
   async login(login: string, password: string): Promise<string> {
     const findUser = await this.userRepository.findOne(login);
