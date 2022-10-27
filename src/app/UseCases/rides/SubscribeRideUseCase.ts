@@ -1,6 +1,6 @@
 import { Subscribe } from "../../entities/Subscribe";
 import { VerifyDate } from "../../protocols/VeriryDate";
-import { RideRepository } from "../../repository/ride/ListRideRepository";
+import { RideRepository } from "../../repository/ride/RideRepository";
 
 const verifyDate = new VerifyDate();
 

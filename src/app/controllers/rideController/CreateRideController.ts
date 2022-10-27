@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { RideRepository } from "../../repository/ride/ListRideRepository";
+import { RideRepository } from "../../repository/ride/RideRepository";
 import { CreateRideUsecase } from "../../UseCases/rides/CreateRideUsecase";
 
 type bearer_token = {

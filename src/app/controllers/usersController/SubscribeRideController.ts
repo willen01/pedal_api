@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { RideRepository } from "../../repository/ride/ListRideRepository";
+import { RideRepository } from "../../repository/ride/RideRepository";
 import { SubscribeRideUseCase } from "../../UseCases/rides/SubscribeRideUseCase";
 
 const subscribeRideUse = new SubscribeRideUseCase(new RideRepository());

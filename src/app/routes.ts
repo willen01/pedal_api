@@ -4,8 +4,8 @@ import CreateUserController from "./controllers/usersController/CreateUserContro
 import LoginUserController from "./controllers/usersController/LoginUserController";
 import ListRidesController from "./controllers/usersController/ListRidesController";
 import ListParticiparionsController from "./controllers/usersController/ListParticiparionsController";
-import ListAllRidesController from "./controllers/usersController/ListAllRidesController";
-import CreateRideController from "./controllers/usersController/CreateRideController";
+import ListAllRidesController from "./controllers/rideController/ListAllRidesController";
+import CreateRideController from "./controllers/rideController/CreateRideController";
 import SubscribeRideController from "./controllers/usersController/SubscribeRideController";
 
 const router = Router();
