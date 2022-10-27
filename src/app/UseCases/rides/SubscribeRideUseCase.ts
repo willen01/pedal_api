@@ -1,11 +1,11 @@
+import { IRide } from "../../protocols/Ride";
 import { Subscribe } from "../../entities/Subscribe";
 import { VerifyDate } from "../../protocols/VeriryDate";
-import { RideRepository } from "../../repository/ride/RideRepository";
 
 const verifyDate = new VerifyDate();
 
 export class SubscribeRideUseCase {
-  constructor(private rideRepository: RideRepository) {}
+  constructor(private rideRepository: IRide) {}
 
   async subscribe(subscribeData: Subscribe): Promise<void> {
     const checkLimitDateSubscription = await verifyDate.verify(

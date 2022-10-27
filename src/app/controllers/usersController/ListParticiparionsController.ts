@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-// import { UserRepository } from "src/app/repository/user/UserRespository";
 import { UserRepository } from "../../repository/user/UserRespository";
 import { ListParticipationsUseCase } from "../../UseCases/users/ListParticiparionsUseCase";
 

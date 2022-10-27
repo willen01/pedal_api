@@ -1,9 +1,9 @@
+import { IRide } from "../../protocols/Ride";
 import { Ride } from "../../entities/Ride";
 import { DecodeToken } from "../../protocols/DecodeToken";
-import { RideRepository } from "../../repository/ride/RideRepository";
 
 export class CreateRideUsecase {
-  constructor(private rideRepository: RideRepository) {}
+  constructor(private rideRepository: IRide) {}
   async create(data: Ride, bearer_token: string): Promise<void> {
     const token = new DecodeToken(bearer_token);
     const idUser = token.getId();
